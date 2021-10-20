@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>css标签选择器</title>
+		<style type="text/css">
+			body{
+				color: aqua;
+				font: "microsoft yahei";
+				font-size: small;}
+			h1{ color: chartreuse;
+				font-size: inherit;}
+			p{color: #00FFFF;
+			  font-size: 16px;}
+			hr{width: 200px;}             /* 标签选择器 */
+			
+			
+			p{font-size: 12px;}
+			.one{font-size: 20px;}
+			.two{font-size: 40px;} 			/* 类别选择器 */
+			.yellow{color: yellow;}
+			.left{text-align: right;}
+			
+			#one{font-size: 10px;}
+			#two{font-size: 50px;} 			/* ID选择器 */
+			
+			p span{color: brown;}  			/* 嵌套声明 */
+			
+			/* *{text-align: center;} */ 		/* 全局声明 */
+		</style>
+	</head>
+	<body>
+		<h1>标题1</h1>
+		<hr>
+		<p>正文的段落</p>
+		版权所有
+		
+		<p class="one">类别1</p>
+		<p class="two">类别2</p>
+		
+		<p id="one">文字1</p>
+		<p id="two">文字2</p>
+		
+		<p><span>天使投资</span>是投资方式的一种</p>
+		
+		<div class="one yellow left">这是一个区域<p>尼好啊</p><hr><br><h1>标题1</h1></div>
+	</body>
+</html>
